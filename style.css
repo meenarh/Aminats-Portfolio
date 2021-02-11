@@ -1,0 +1,136 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+nav{
+	background-color: whitesmoke;
+	word-spacing: normal; 
+    margin: auto;
+    padding: 30px;
+}
+
+.navbar-logo{
+	float: left;
+	color: whitesmoke;
+	font-weight: 700;
+}
+
+.navbar-logo > a{
+    font-size: 1.5em;
+    color: orangered;
+    text-decoration: none;
+}
+
+.navbar-logo > a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-pills{
+    display: inline-block;
+    float: right;
+}
+
+.nav-pills > li{
+    display: inline-block;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+}
+
+.nav-pills > li > a{
+    color: orangered;
+    text-decoration: none;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+}
+
+.nav-pills > li > a:hover{
+    color: black;
+    text-decoration: underline;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+}
+
+.intro{
+    padding: 20px;
+}
+
+.deets{
+    padding-right: 30px;
+    text-align: left;
+}
+
+article{
+    color: black;
+    font-size: 26px;
+}
+
+.name{
+    color: orangered;
+    font-weight: 700;
+}
+
+
+.hire{
+    color: white;
+    background-image: linear-gradient(to right, orangered, orange);
+    width: 100px;
+    border-radius: 7px;
+    height: 30px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 40px;
+}
+
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+img{
+    border-radius: 30px;
+}
+
+.tools{
+    background-image: linear-gradient(to right, orangered,orange);
+    border: 20px;
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+}
+
+
+
+
+
+/*Responsive Layout*/
+@media screen and (max-width: 800px){
+    .column{
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
